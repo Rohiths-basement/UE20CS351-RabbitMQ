@@ -1,0 +1,52 @@
+version: '3'
+
+services:
+  rabbitmq:
+    image: rabbitmq
+    networks:
+      - rabbitmq_network
+
+  producer:
+    build: ./producer
+    ports:
+      - "5000:5000"
+      - "5001:5001"
+      - "5002:5002"
+      - "5003:5003"
+    networks:
+      - app_network
+    depends_on:
+      - rabbitmq
+
+  consumer_one:
+    build: ./consumer_one
+    networks:
+      - app_network
+    depends_on:
+      - rabbitmq
+
+  consumer_two:
+    build: ./consumer_two
+    networks:
+      - app_network
+    depends_on:
+      - rabbitmq
+
+  consumer_three:
+    build: ./consumer_three
+    networks:
+      - app_network
+    depends_on:
+      - rabbitmq
+
+  consumer_four:
+    build: ./consumer_four
+    networks:
+      - app_network
+    depends_on:
+      - rabbitmq
+
+networks:
+  rabbitmq_network:
+  app_network:
+
