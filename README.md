@@ -8,25 +8,6 @@ Building and deploying a microservices architecture where multiple components co
 
 
 # File Structure 
-├── <microservices-project-directory> <br>
-    ├── docker-compose.yml <br>
-    ├── producer <br>
-    │   ├── producer.py <br>
-    │   ├── Dockerfile <br>
-        └──requirements.txt<br>
-    ├── consumer_one <br>
-    │   ├── healthcheck.py <br>
-    │   ├── Dockerfile<br>
-    │   └──requirements.txt<br>
-    ├── consumer_two<br>
-    │   ├── insertion.py<br>
-    │   ├── Dockerfile<br>
-    │   └──requirements.txt<br>
-    ├── consumer_three<br>
-    │   ├── deletion.py<br>
-    │   ├── Dockerfile<br>
-    │   └──requirements.txt<br>
-    └── consumer_four<br>
-        ├── read.py<br>
-        ├── Dockerfile<br>
-        └──requirements.txt<br>
+
+![image](https://github.com/Rohiths-basement/UE20CS351-RabbitMQ/assets/83353135/b9764381-b1d0-40a1-b5ee-9737a12d06dd)
+
