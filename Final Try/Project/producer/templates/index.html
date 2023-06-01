@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Management System</title>
+</head>
+<body>
+	<h1>Student Management System</h1>
+	<h2>Add New Student</h2>
+	<form method="GET" action="http://localhost:5000/insert_record">
+		<label for="name">Name:</label><br>
+		<input type="text" id="name" name="name" required><br>
+		<label for="srn">SRN:</label><br>
+		<input type="text" id="srn" name="srn" required><br>
+		<label for="section">Section:</label><br>
+		<input type="text" id="section" name="section" required><br>
+		<br>
+		<input type="submit" value="Submit">
+	</form>
+	<h2>Delete Student</h2>
+	<form method="GET" action="http://localhost:5000/delete_record">
+		<label for="srn">SRN:</label><br>
+		<input type="text" id="srn" name="srn" required><br>
+		<br>
+		<input type="submit" value="Delete">
+	</form>
+	<h2>View All Students</h2>
+	<form method="GET" action="http://localhost:5000/read_data">
+		<input type="submit" value="View All Students">
+	</form>
+    <h2>Check health of connection</h2>
+	<form method="GET" action="http://localhost:5000/health_check">
+        <input type="text" id="message" name="message" required><br>
+		<input type="submit" value="Check health">
+	</form>
+</body>
+</html>
