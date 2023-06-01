@@ -8,25 +8,25 @@ Building and deploying a microservices architecture where multiple components co
 
 
 # File Structure 
-├── <microservices-project-directory>
-    ├── docker-compose.yml
-    ├── producer
-    │   ├── producer.py
-    │   ├── Dockerfile
-        └──requirements.txt
-    ├── consumer_one
-    │   ├── healthcheck.py
-    │   ├── Dockerfile
-    │   └──requirements.txt
-    ├── consumer_two
-    │   ├── insertion.py
-    │   ├── Dockerfile
-    │   └──requirements.txt
-    ├── consumer_three
-    │   ├── deletion.py
-    │   ├── Dockerfile
-    │   └──requirements.txt
-    └── consumer_four
-        ├── read.py
-        ├── Dockerfile
-        └──requirements.txt
+├── <microservices-project-directory> <br>
+    ├── docker-compose.yml <br>
+    ├── producer <br>
+    │   ├── producer.py <br>
+    │   ├── Dockerfile <br>
+        └──requirements.txt<br>
+    ├── consumer_one <br>
+    │   ├── healthcheck.py <br>
+    │   ├── Dockerfile<br>
+    │   └──requirements.txt<br>
+    ├── consumer_two<br>
+    │   ├── insertion.py<br>
+    │   ├── Dockerfile<br>
+    │   └──requirements.txt<br>
+    ├── consumer_three<br>
+    │   ├── deletion.py<br>
+    │   ├── Dockerfile<br>
+    │   └──requirements.txt<br>
+    └── consumer_four<br>
+        ├── read.py<br>
+        ├── Dockerfile<br>
+        └──requirements.txt<br>
